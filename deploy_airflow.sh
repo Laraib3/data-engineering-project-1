@@ -43,7 +43,7 @@ nohup airflow standalone > airflow.log &
 sleep 30
 
 mkdir -p ~/airflow/dags
-echo "📄 Copying your DAG file to Airflow DAGs directory..."
+echo "Copying your DAG file to Airflow DAGs directory..."
 cp ./create_table_dag.py ~/airflow/dags/
 
 echo "Airflow setup complete! Access it on http://localhost:8080"
