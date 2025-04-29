@@ -11,7 +11,7 @@ SECONDS_LEFT=600
 while [ $SECONDS_LEFT -gt 0 ]; do
     MINS=$((SECONDS_LEFT / 60))
     SECS=$((SECONDS_LEFT % 60))
-    printf "\r⏳ Time left: %02d:%02d" $MINS $SECS
+    printf "\r Time left: %02d:%02d" $MINS $SECS
     sleep 1
     SECONDS_LEFT=$((SECONDS_LEFT - 1))
 done
