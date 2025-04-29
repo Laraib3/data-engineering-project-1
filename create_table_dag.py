@@ -100,7 +100,6 @@ with DAG(
 
     success_task = DummyOperator(task_id='success_task')
 
-    # DAG dependency chain
     countries = fetch_distinct_countries()
     query_dicts = generate_table_queries.expand(country=countries)
     create_table_view.expand(query_dict=query_dicts)
